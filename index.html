@@ -10,7 +10,140 @@
         <h1>Gerenciador de Tarefas Acadêmicas</h1>
     </header>
     <main>
-        
+        <section aria-labelledby="titulo-filtros">
+            <h2 id="titulo-filtros">Buscar e Filtrar Tarefas</h2>
+
+            <label for="busca">Buscar por título da tarefa:</label>
+            <input type="search" id="busca" name="busca">
+
+            <label for="status">Filtrar por status:</label>
+            <select id="status" name="status">
+                <option value="">Todos</option>
+                <option value="a-fazer">A fazer</option>
+                <option value="andamento">Em andamento</option>
+                <option value="revisao">Em revisão</option>
+                <option value="concluida">Concluída</option>
+            </select>
+            
+            <fieldset>
+                <legend>Filtrar por prioridade:</legend>
+                
+                <input type="radio" id="prioridade-todas" name="prioridade" value="" checked>
+                <label for="prioridade-todas">Todas</label>
+                
+                <input type="radio" id="prioridade-baixa" name="prioridade" value="baixa">
+                <label for="prioridade-baixa">Baixa</label>
+                
+                <input type="radio" id="prioridade-media" name="prioridade" value="media">
+                <label for="prioridade-media">Média</label>
+                
+                <input type="radio" id="prioridade-alta" name="prioridade" value="alta">
+                <label for="prioridade-alta">Alta</label>
+            </fieldset>
+        </section>
+
+        <section aria-labelledby="titulo-fazer">
+            <h2 id="titulo-fazer">A fazer</h2>
+            <ul>
+                 <li>
+                    <article>
+                        <h3>Criar protótipo da tela inicial</h3>
+                        <p>Projeto: Sistema Acadêmico</p>
+                        <p>Responsável: Andressa</p>
+                        <p>Prazo: 15/08/2026</p>
+                        <p>Prioridade: Alta</p>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <h3>Pesquisar requisitos do projeto</h3>
+                        <p>Projeto: Gerenciador de Tarefas</p>
+                        <p>Responsável: Andressa</p>
+                        <p>Prazo: 18/08/2026</p>
+                        <p>Prioridade: Média</p>
+                    </article>
+                </li>
+            </ul>
+        </section>
+
+        <section aria-labelledby="titulo-andamento">
+            <h2 id="titulo-andamento">Em andamento</h2>
+            <ul>
+                <li>
+                    <article>
+                        <h3>Desenvolver estrutura HTML</h3>
+                        <p>Projeto: Gerenciador de Tarefas</p>
+                        <p>Responsável: Andressa</p>
+                        <p>Prazo: 20/08/2026</p>
+                        <p>Prioridade: Alta</p>
+                    </article>
+                </li>
+                
+                <li>
+                    <article>
+                        <h3>Documentar requisitos do sistema</h3>
+                        <p>Projeto: Sistema Acadêmico</p>
+                        <p>Responsável: Carlos</p>
+                        <p>Prazo: 22/08/2026</p>
+                        <p>Prioridade: Baixa</p>
+                    </article>
+                </li>
+            </ul>
+        </section>
+
+        <section aria-labelledby="titulo-revisao">
+            <h2 id="titulo-revisao">Em revisão</h2>
+            <ul>
+                <li>
+                    <article>
+                        <h3>Revisar documentação do projeto</h3>
+                        <p>Projeto: Sistema Acadêmico</p>
+                        <p>Responsável: Mariana</p>
+                        <p>Prazo: 24/08/2026</p>
+                        <p>Prioridade: Média</p>
+                    </article>
+                </li>
+                
+                <li>
+                    <article>
+                        <h3>Revisar estrutura semântica</h3>
+                        <p>Projeto: Gerenciador de Tarefas</p>
+                        <p>Responsável: Andressa</p>
+                        <p>Prazo: 25/08/2026</p>
+                        <p>Prioridade: Alta</p>
+                    </article>
+                </li>
+            </ul>
+        </section>
+
+        <section aria-labelledby="titulo-concluida">
+            <h2 id="titulo-concluida">Concluída</h2>
+            <ul>
+                <li>
+                    <article>
+                        <h3>Definir tema do projeto</h3>
+                        <p>Projeto: Gerenciador de Tarefas</p>
+                        <p>Responsável: Andressa</p>
+                        <p>Prazo: 05/08/2026</p>
+                        <p>Prioridade: Baixa</p>
+                    </article>
+                </li>
+                
+                <li>
+                    <article>
+                        <h3>Criar repositório do projeto</h3>
+                        <p>Projeto: Gerenciador de Tarefas</p>
+                        <p>Responsável: Andressa</p>
+                        <p>Prazo: 08/08/2026</p>
+                        <p>Prioridade: Média</p>
+                    </article>
+                </li>
+            </ul>
+        </section>
     </main>
+    <footer>
+        <p>Andressa Marques</p>
+        <p>Desenvolvimento Frontend — 2026.2</p>
+    </footer>
 </body>
 </html>
